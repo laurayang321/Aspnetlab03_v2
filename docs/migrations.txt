@@ -1,0 +1,5 @@
+﻿enable-migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations
+
+add-migration -ConfigurationTypeName AspnetLab3.Migrations.Configuration "FirstMigration"
+
+update-database -ConfigurationTypeName AspnetLab3.Migrations.Configuration
